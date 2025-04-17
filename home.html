@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#f9faff]" >
+    <div class=" flex mt-4 w-full h-12 items-center justify-between space-x-6 p-6">
+        <p class=" w-full font-bold font-mono text-yellow-500 text-xl">Trust Akalonu</p>
+        <div class="flex  mr-10 space-x-6 w-500">
+            <a href="" class="text-lg">About</a>
+            <a href="#project" class="scroll-link text-lg">Projects</a>
+            <a href="" class="text-lg ">Contact</a>
+        </div>
+    </div>
+    <!-- Hero Section -->
+    <header class=" min-h-screen flex items-center justify-center"> 
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h1 class="text-5xl font-bold text-gray-800 animate-fadeIn">Hello <span class="wave inline-block text-5xl">👋</span>, my name is <span class="text-yellow-500">Trust Akalonu</span></h1>
+            <p class="mt-4 text-lg text-gray-600 animate-fadeIn delay-200">
+              Hey there, nice having you here Here's a little bit about my self I'm a Frontend Developer, Web3 Enthusiast, AI Builder also into woking with framer and webflow, with almost 3 years of expirence in the field. Passionate about creating amazing digital experiences.
+            </p>
+            <div class="mt-6 flex justify-center gap-4">
+                <a href="#" class="px-6 py-2 bg-yellow-500 text-white rounded-lg shadow-md hover:bg-yellow-600 transition">Projects</a>
+                <a href="#" class="px-6 py-2 border border-gray-700 text-gray-700 rounded-lg hover:bg-gray-200 transition">LinkedIn</a>
+            </div>
+        </div>
+        <div class="w-1/2 relative">
+            <!-- Curved Background Shape -->
+            <!-- <div class="absolute top-0 right-0 w-[80%] h-[90%] bg-yellow-500 rounded-bl-[80px] rounded-tl-[150px] -z-10"></div> -->
+    
+            <!-- Profile Image -->
+            <img src="profile.jpg" 
+                alt="Profile Image" 
+                class="relative w-full max-w-sm mx-auto rounded-full shrink-0 sm:mx-0 shadow-lg">
+            
+        </div>
+           
+        
+    </header>
+    <div  id="project" class="flex flex-col w-full items-center    my-50 justify-center">
+        <div class="flex flex-col mb-10 ">
+            <h1 class="font-mono font-bold  mx-1.5 text-2xl">Projects</h1>
+            <div class="w-16 h-1 mt-2 ml-7 rounded bg-yellow-500"></div>
+         </div>
+         <div class="flex flex-row w-150 my-10 animate-fadeIn delay-300">
+            <div class=" mx-auto max-w-md shadow-md bg-white w-100 h-200 rounded-[20px] rounded-tr-none rounded-br-none p-6">
+                <h1 class="text-xl font-bold font-Sans-serif mb-10">Book-A-Meal</h1>
+                
+                <p>Quickest way to get prices of your local delicacies <br> and place your order in just 2 taps</p>
+                <br>
+                <a href="#" class="px-6 py-2 border border-gray-700 text-gray-700 rounded-lg hover:bg-gray-200 transition">View Project</a>
+                
+            </div>
+            
+            <div class="rounded-[20px] shadow-md rounded-tl-none rounded-bl-none overflow-hidden  bg-white">
+                <img class="w-70 h-60 " src="riced.jpg" alt="spag">
+             </div>
+         </div>
+         <div class="flex flex-row w-280 my-10 animate-fadeIn delay-400">
+            <div class="rounded-[20px] shadow-md rounded-tr-none rounded-br-none overflow-hidden w-[310px] h-60 bg-white">
+                <img class="w-[310px] h-60 " src="tali.jpg" alt="tali">
+             </div>
+            <div class=" mx-auto max-w-md shadow-md bg-white w-100 h-200 rounded-[20px] rounded-tl-none rounded-bl-none p-6">
+                <h1 class="text-xl font-bold font-Sans-serif mb-10">Tali</h1>
+                
+                <p class="mb-5">Your personal chat assistant, Giving you answers to your questions in seconds, Fast and reliable AI at your screen</p>
+                <a href="#" class="px-6 py-2 border border-gray-900 text-gray-700 rounded-lg hover:bg-gray-200 transition">View Project</a>
+            </div>
+           
+         </div>
+         <div class="flex flex-row w-150 my-10 animate-fadeIn delay-300">
+            <div class=" mx-auto max-w-md shadow-md bg-white w-100 h-200 rounded-[20px] rounded-tr-none rounded-br-none p-6">
+                <h1 class="text-xl font-bold font-Sans-serif mb-10">Wether</h1>
+                
+                <p>Know what your today's weather going to be so you can prepare for it, customized to your liking</p>
+                <br>
+                <a href="#" class="px-6 py-2 border border-gray-700 text-gray-700 rounded-lg hover:bg-gray-200 transition">View Project</a>
+                
+            </div>
+            
+            <div class="rounded-[20px] shadow-md rounded-tl-none rounded-bl-none overflow-hidden  bg-white">
+                <img class="w-65 h-60 " src="weath.jpg" alt="spag">
+             </div>
+         </div>
+
+        </div>
+            
+        <div class="flex flex-col w-full items-center justify-center mt-[200px] mb-[200px]">
+            <div class="flex flex-col mb-10 ">
+                <h1 class="font-mono font-bold  mx-1.5 text-2xl">Experience</h1>
+                <div class="w-16 h-1 mt-2 ml-10 rounded bg-yellow-500"></div>
+            </div>
+
+            <div class="mb-[40px] flex items-center">
+                <p class="font-mono text-xl font-bold">Frontend</p>
+                <div class=" relative w-[400px] h-1 mt-2 ml-7 rounded bg-black">
+                    <span class="absolute left-3/4 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[15px] h-[15px]
+                     inline-block bg-yellow-500 rounded-full"></span></div>
+            </div>
+            <div class="mb-[40px] flex items-center">
+                <p class="font-mono text-xl font-bold mr-[10px]">Backend</p>
+                <div class=" relative w-[400px] h-1 mt-2 ml-7 rounded bg-black">
+                    <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[15px] h-[15px]
+                     inline-block bg-yellow-500 rounded-full"></span></div>
+            </div>
+            <div class="mb-[40px] flex items-center">
+                <p class="font-mono text-xl font-bold mr-[10px]">Webflow</p>
+                <div class=" relative w-[400px] h-1 mt-2 ml-7 rounded bg-black">
+                    <span class="absolute left-1/4 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[15px] h-[15px]
+                     inline-block bg-yellow-500 rounded-full"></span></div>
+            </div>
+            <div class="mb-[40px] flex items-center">
+                <p class="font-mono text-xl font-bold mr-[15px]">Framer</p>
+                <div class=" relative w-[400px] h-1 mt-2 ml-7 rounded bg-black">
+                    <span class="absolute left-[90px] top-1/2 -translate-x-1/2 -translate-y-1/2 w-[15px] h-[15px]
+                     inline-block bg-yellow-500 rounded-full"></span></div>
+            </div>
+            <div class="mb-[40px] flex items-center">
+                <p class="font-mono text-xl font-bold ">Blockchain</p>
+                <div class=" relative w-[400px] h-1 mt-2 ml-7 rounded bg-black">
+                    <span class="absolute left-3/4 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[15px] h-[15px]
+                     inline-block bg-yellow-500 rounded-full"></span></div>
+            </div>
+        </div>
+        <!-- <div class="flex flex-col mb-10 ">
+            <h1 class="font-mono font-bold  mx-1.5 text-2xl">Projects</h1>
+            <div class="w-16 h-1 mt-2 ml-7 rounded bg-yellow-500"></div>
+         </div> -->
+        
+    <script>
+        document.querySelectorAll('.scroll-link').forEach(link => {
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+          });
+        });
+
+//         const elements = document.querySelectorAll('[data-animate-on-scroll]');
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//       if(entry.isIntersecting) {
+//         entry.target.classList.remove('hidden');
+//         entry.target.classList.add('animate-fadeIn');
+//         observer.unobserve(entry.target);
+//       }
+//     });
+//   });
+  
+//   elements.forEach(el => observer.observe(el));
+      </script>
+      
+</body>
+</html>
+
+    
+
+</body>
+</html>
