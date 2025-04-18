@@ -4,6 +4,13 @@
 
 
 
+.yellow-dot {
+  transition: left 3s ease-in-out, opacity 0.3s ease-in;
+}
+.yellow-dot.animate {
+  opacity: 1;
+}
+
 
 @keyframes fadeIn {
     from {
