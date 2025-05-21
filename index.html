@@ -16,14 +16,45 @@
     
 </head>
 <body class="bg-[#f9faff]" >
-  <div class="flex flex-col sm:flex-row mt-4 w-full items-center justify-between space-y-4 sm:space-y-0 p-6">
-    <p class="w-full font-bold font-mono text-yellow-500 text-xl text-center sm:text-left">Trust Akalonu</p>
-    <div class="flex flex-col sm:flex-row sm:mr-10 space-y-2 sm:space-y-0 sm:space-x-6 text-center">
-      <a href="about.html" class="text-lg">About</a>
-      <a href="#project" class="scroll-link text-lg">Projects</a>
-      <a href="#contact" class="text-lg">Contact</a>
+ <!-- Navbar Container -->
+<!-- Main Content -->
+<!-- MAIN CONTENT (contains navbar and everything else) -->
+<div id="main-content" class="relative w-full p-6 transition-all duration-300 z-10">
+  <div class="flex items-center justify-between">
+    <p class="font-bold font-mono text-yellow-500 text-xl">Trust Akalonu</p>
+
+    <!-- Hamburger -->
+    <button id="menu-btn" class="sm:hidden w-10 h-10 z-30 text-yellow-500 text-4xl leading-none focus:outline-none">
+      ☰
+    </button>
+
+    <!-- Desktop Nav -->
+    <div class="hidden sm:flex space-x-6 text-right">
+      <a href="about.html" class="text-lg hover:text-yellow-400 transition">About</a>
+      <a href="#project" class="text-lg hover:text-yellow-400 transition">Projects</a>
+      <a href="#contact" class="text-lg hover:text-yellow-400 transition">Contact</a>
     </div>
   </div>
+</div>
+
+<!-- MOBILE MENU OVERLAY -->
+<div id="mobile-menu" class="sm:hidden fixed inset-0 opacity-0 pointer-events-none transition-opacity duration-300 flex flex-col items-center space-y-6 bg-black/80 backdrop-blur-md z-40 text-white text-2xl">
+
+  <!-- Close Button -->
+  <button id="close-btn" class="absolute top-6 right-6 text-4xl text-yellow-400 hover:text-yellow-600 focus:outline-none">
+    ✕
+  </button>
+
+  <!-- Nav Links -->
+  <a href="about.html" class="mobile-link hover:text-yellow-400 transition">About</a>
+  <a href="#project" class="mobile-link hover:text-yellow-400 transition">Projects</a>
+  <a href="#contact" class="mobile-link hover:text-yellow-400 transition">Contact</a>
+</div>
+
+
+<!-- Toggle JS -->
+
+
   
     <!-- Hero Section --> 
     <header class=" min-h-screen flex flex-col-reverse md:flex-row items-center justify-center"> 
@@ -33,8 +64,8 @@
               Hey there, nice having you here Here's a little bit about my self I'm a Frontend Developer, Web3 Enthusiast, AI Builder also into woking with framer and webflow, with almost 3 years of expirence in the field. Passionate about creating amazing digital experiences.
             </p>
             <div class="mt-6 flex justify-center gap-4">
-                <a href="#" class="px-6 py-2 bg-yellow-500 text-white rounded-lg shadow-md hover:bg-yellow-600 transition">Projects</a>
-                <a href="#" class="px-6 py-2 border border-gray-700 text-gray-700 rounded-lg hover:bg-gray-200 transition">LinkedIn</a>
+                <a href="#project" class="px-6 py-2 bg-yellow-500 text-white rounded-lg shadow-md hover:bg-yellow-600 transition">Projects</a>
+                <a href="https://www.linkedin.com/in/trust-akalonu-51815a201/" class="px-6 py-2 border border-gray-700 text-gray-700 rounded-lg hover:bg-gray-200 transition">LinkedIn</a>
             </div>
         </div>
         <div class="order-2 w-1/2 relative">
@@ -42,7 +73,7 @@
             <!-- <div class="absolute top-0 right-0 w-[80%] h-[90%] bg-yellow-500 rounded-bl-[80px] rounded-tl-[150px] -z-10"></div> -->
     
             <!-- Profile Image -->
-            <img src="profile.jpg" 
+            <img src="pro.jpg" 
                 alt="Profile Image" 
                 class="relative w-full max-w-sm mx-auto rounded-full shrink-0 sm:mx-0 shadow-lg">
             
@@ -65,7 +96,7 @@
           <div class="mx-auto max-w-md shadow-md bg-white w-full sm:w-1/2 rounded-[20px] p-6 mb-6 sm:mb-0">
               <h1 class="text-xl font-bold mb-4">Book-A-Meal</h1>
               <p class="mb-5">Quickest way to get prices of your local delicacies and place your order in just 2 taps.</p>
-              <a href="#" class="px-6 py-2 border border-gray-700 text-gray-700 rounded-lg hover:bg-gray-200 transition">View Project</a>
+              <a href="" class="px-6 py-2 border border-gray-700 text-gray-700 rounded-lg hover:bg-gray-200 transition">View Project</a>
           </div>
   
           <div class="rounded-[20px] shadow-md bg-white w-full sm:w-1/2 overflow-hidden">
@@ -78,9 +109,9 @@
     
         <!-- TEXT SECTION -->
         <div class="mx-auto max-w-md shadow-md bg-white w-full sm:w-1/2 rounded-[20px] p-6 mb-6 sm:mb-0">
-          <h1 class="text-xl font-bold mb-4">Tali</h1>
-          <p class="mb-5">Your personal chat assistant, giving you answers to your questions in seconds, fast and reliable AI at your screen.</p>
-          <a href="#" class="px-6 py-2 border border-gray-900 text-gray-700 rounded-lg hover:bg-gray-200 transition">View Project</a>
+          <h1 class="text-xl font-bold mb-4">Korlet</h1>
+          <p class="mb-5">Transfer eth easily with <b>Korlet</b>, from one user to another it goes in seconds</p>
+          <a href="https://trust-dadev.github.io/Korlet/" class="px-6 py-2 border border-gray-900 text-gray-700 rounded-lg hover:bg-gray-200 transition">View Project</a>
         </div>
     
         <!-- IMAGE SECTION -->
@@ -106,7 +137,7 @@
   
   
         
-        <div  class="flex flex-col w-full items-center justify-center mt-[200px] mb-[200px]" id="experience-section">
+        <div  class="flex flex-col w-full items-center justify-center p-[30px] mt-[200px] mb-[200px]" id="experience-section">
           <div class="flex flex-col mb-10 text-center">
             <h1 class="font-mono font-bold text-2xl">Experience</h1>
             <div class="w-16 h-1 mt-2 mx-auto rounded bg-yellow-500"></div>
