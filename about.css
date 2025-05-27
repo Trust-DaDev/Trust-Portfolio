@@ -1,0 +1,33 @@
+/* .back-button {
+  text-decoration: none;
+  color: #fff; /* dark text 
+  font-size: 19px;
+  font-weight: 500;
+  border: none;
+  background: none;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+  cursor:pointer;
+}
+
+.back-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #b9b1b1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.back-button:hover::after {
+  transform: scaleX(1);
+}
+
+.back-button:hover {
+  color: #000; /* darker on hover 
+} */

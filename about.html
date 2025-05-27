@@ -4,25 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
+
+    <!-- Tailwind CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&display=swap" rel="stylesheet" />
+
     <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
       .typed-cursor {
         font-weight: 100;
         font-size: 24px;
         color: #fff;
       }
+
+      /* Apply Outfit font globally */
+      body {
+        font-family: 'Outfit', sans-serif;
+      }
     </style>
   </head>
-  <body class="m-0 p-0">
 
+  <body class="m-0 p-0 bg-black h-screen ">
+
+    <!-- Back Button -->
+    
+
+    <!-- Hero Section -->
     <div class="relative h-screen w-full bg-cover bg-center" style="background-image: url('profile1.jpg');">
+          <a href="index.html"
+   class="absolute top-5 left-5 px-4 pt-2 pb-1 text-white hover:text-yellow-500 transition-all duration-500 ease-in-out
+          font-semibold text-lg tracking-wide relative group z-50 overflow-hidden">
+  ← Back
+  <span class="absolute bottom-0 left-0 h-[2px] bg-yellow-500 w-0 group-hover:w-full transition-all duration-500 ease-in-out" style="z-index: 9999;"></span>
+</a>
+
+
+
       <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center px-6">
         <div class="text-white text-center max-w-3xl space-y-6">
           <h1 class="text-4xl md:text-5xl font-bold tracking-tight">
             <span id="typed-title"></span>
           </h1>
           <p id="typed-text" class="text-lg md:text-xl leading-relaxed min-h-[100px]"></p>
-          <a id="contactBtn" href="mailto:trustakalonu12@gmail.com?subject=Contact%20from%20Website&body=Hello%20there!"
+          <a id="contactBtn"
+             href="mailto:trustakalonu12@gmail.com?subject=Contact%20from%20Website&body=Hello%20there!"
              class="inline-block mt-4 px-6 py-3 bg-yellow-500 text-white font-semibold rounded-xl shadow hover:bg-yellow-600 transition-opacity duration-1000 opacity-0">
             Get in Touch
           </a>
@@ -30,35 +62,34 @@
       </div>
     </div>
 
-    
+    <!-- Typed.js Script -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  const titleTyped = new Typed("#typed-title", {
-    strings: ["About Me"],
-    typeSpeed: 80,
-    showCursor: true,
-    onComplete: () => {
-      new Typed("#typed-text", {
-        strings: [
-          `Hello, I'm <span class="text-yellow-500 font-semibold">Trust Akalonu</span>, a passionate developer with a focus on frontend development and Web3 technology. My goal is to build intuitive, elegant, and user-focused digital experiences.<br><br>
-          With skills in HTML, CSS, JavaScript, and modern frameworks like Tailwind CSS, typed.js, alpline.js and Solidity, I aim to bridge creativity with technology. When I'm not coding, I’m likely exploring design ideas on Dribbble or building AI-powered tools.`
-        ],
-        typeSpeed: 25,
-        showCursor: false, // hide blinking cursor here
+    <script>
+      const titleTyped = new Typed("#typed-title", {
+        strings: ["About Me"],
+        typeSpeed: 80,
+        showCursor: true,
         onComplete: () => {
-          // Remove any leftover blinking cursor
-          const cursorEl = document.querySelector(".typed-cursor");
-          if (cursorEl) cursorEl.remove();
+          new Typed("#typed-text", {
+            strings: [
+              `Hello, I'm <span class="text-yellow-500 font-semibold">Trust Akalonu</span>, a passionate developer with a focus on frontend development and Web3 technology. My goal is to build intuitive, elegant, and user-focused digital experiences.<br><br>
+              With skills in HTML, CSS, JavaScript, and modern frameworks like Tailwind CSS, typed.js, alpline.js and Solidity, I aim to bridge creativity with technology. When I'm not coding, I’m likely exploring design ideas on Dribbble or building AI-powered tools.`
+            ],
+            typeSpeed: 25,
+            showCursor: false,
+            onComplete: () => {
+              const cursorEl = document.querySelector(".typed-cursor");
+              if (cursorEl) cursorEl.remove();
 
-          // Fade in button
-          document.getElementById('contactBtn').classList.remove('opacity-0');
-          document.getElementById('contactBtn').classList.add('opacity-100');
+              // Fade in button
+              const contactBtn = document.getElementById('contactBtn');
+              contactBtn.classList.remove('opacity-0');
+              contactBtn.classList.add('opacity-100');
+            }
+          });
         }
       });
-    }
-  });
-</script>
-
+    </script>
 
   </body>
 </html>
